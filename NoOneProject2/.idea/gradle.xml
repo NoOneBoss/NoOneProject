@@ -9,7 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dialog" />
+            <option value="$PROJECT_DIR$/intentfilter" />
+            <option value="$PROJECT_DIR$/lifecycleactivity" />
+            <option value="$PROJECT_DIR$/multyactivity" />
+            <option value="$PROJECT_DIR$/notificationapp" />
+            <option value="$PROJECT_DIR$/toast" />
+            <option value="$PROJECT_DIR$/toastapp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -13,4 +13,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "NoOneProject2"
-include ':app'
+include ':lifecycleactivity'
+include ':multyactivity'
+include ':intentfilter'
+include ':toast'
+include ':toastapp'
+include ':notificationapp'
+include ':dialog'
