@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="ru.mirea.istornikov.simplefragmentapp.BlankFragment"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_blank1" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView5"
+        android:name="ru.mirea.istornikov.simplefragmentapp.BlankFragment2"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_blank2" />
+
+</LinearLayout>

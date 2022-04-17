@@ -10,13 +10,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/dialog" />
-            <option value="$PROJECT_DIR$/intentfilter" />
-            <option value="$PROJECT_DIR$/lifecycleactivity" />
-            <option value="$PROJECT_DIR$/multyactivity" />
-            <option value="$PROJECT_DIR$/notificationapp" />
-            <option value="$PROJECT_DIR$/toast" />
-            <option value="$PROJECT_DIR$/toastapp" />
+            <option value="$PROJECT_DIR$/intentapp" />
+            <option value="$PROJECT_DIR$/resultapp" />
+            <option value="$PROJECT_DIR$/shareapp" />
+            <option value="$PROJECT_DIR$/simplefragmentapp" />
+            <option value="$PROJECT_DIR$/system" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
