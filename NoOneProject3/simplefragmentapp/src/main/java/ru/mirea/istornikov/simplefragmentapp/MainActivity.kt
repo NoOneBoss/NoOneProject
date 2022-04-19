@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         fragmentManager = supportFragmentManager
         when (view.id) {
             R.id.btnFragment1 -> fragmentManager.beginTransaction().replace(R.id.fragmentContainer,fragment1).commit()
-            R.id.btnFragment2 -> fragmentManager.beginTransaction().replace(R.id.fragmentContainer,fragment2).commit()
             else -> println(fragmentManager.fragments)
         }
     }
