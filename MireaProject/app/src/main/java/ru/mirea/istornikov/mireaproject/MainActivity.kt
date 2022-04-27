@@ -1,7 +1,9 @@
 package ru.mirea.istornikov.mireaproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -12,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import ru.mirea.istornikov.mireaproject.databinding.ActivityMainBinding
+import ru.mirea.istornikov.mireaproject.ui.musicplayer.MusicService
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_calculator, R.id.nav_browser
+                R.id.nav_home, R.id.nav_calculator, R.id.nav_browser, R.id.nav_music
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -53,5 +56,18 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+
+    fun onClickPlayMusic(view: View) {
+        startService(
+            Intent(this, MusicService::class.java)
+        )
+    }
+
+    fun onClickStopMusic(view: View) {
+        stopService(
+            Intent(this, MusicService::class.java)
+        )
     }
 }
