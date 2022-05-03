@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1048275948466",
+    "project_id": "nooneproject7",
+    "storage_bucket": "nooneproject7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048275948466:android:4c69e773dee439f2130aab",
+        "android_client_info": {
+          "package_name": "ru.mirea.istornikov.firebaseauth "
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048275948466-q7bgs470ku302l6iv6biogg5dhkoq215.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDnJBfpIRJr89-gx_9xmUPo3BlBqeeNoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048275948466-q7bgs470ku302l6iv6biogg5dhkoq215.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
