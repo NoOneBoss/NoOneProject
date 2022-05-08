@@ -28,4 +28,34 @@
         android:name="ru.mirea.istornikov.mireaproject.ui.musicplayer.MusicFragment"
         android:label="@string/menu_music"
         tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/nav_hardware"
+        android:name="ru.mirea.istornikov.mireaproject.ui.hardware.HardwareFragment"
+        android:label="@string/menu_hardware"
+        tools:layout="@layout/fragment_hardware" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="ru.mirea.istornikov.mireaproject.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_stories"
+        android:name="ru.mirea.istornikov.mireaproject.ui.stories.StoriesFragment"
+        android:label="@string/menu_stories"
+        tools:layout="@layout/fragment_stories" />
+
+    <fragment
+        android:id="@+id/nav_web_parser"
+        android:name="ru.mirea.istornikov.mireaproject.ui.webparser.WebParserFragment"
+        android:label="@string/menu_webparser"
+        tools:layout="@layout/fragment_web_parser" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="ru.mirea.istornikov.mireaproject.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>

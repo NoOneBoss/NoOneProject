@@ -16,3 +16,4 @@ rootProject.name = "NoOneProject9"
 include ':googlemaps'
 include ':yandexmaps'
 include ':yandexdriver'
+include ':googlemap'

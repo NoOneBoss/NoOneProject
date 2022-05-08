@@ -39,6 +39,7 @@ private class GetTimeTask : AsyncTask<Void?, Void?, String>() {
         try {
             val socket = Socket(host, port)
             val reader = getReader(socket)
+            println(reader)
             reader.readLine()
             timeResult = reader.readLine()
             Log.d(TAG, timeResult)

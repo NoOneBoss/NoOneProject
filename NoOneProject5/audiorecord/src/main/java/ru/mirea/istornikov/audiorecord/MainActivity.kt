@@ -93,7 +93,6 @@ class MainActivity : AppCompatActivity() {
         mediaRecorder.stop()
         mediaRecorder.reset()
         mediaRecorder.release()
-        Toast.makeText(this,"You are not recording right now!",Toast.LENGTH_SHORT).show()
     }
 
     private fun processAudioFile(){

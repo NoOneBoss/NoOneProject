@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var signInBtn: Button
     private lateinit var signOutBtn: Button
     private lateinit var createAcc: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

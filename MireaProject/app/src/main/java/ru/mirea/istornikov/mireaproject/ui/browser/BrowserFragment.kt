@@ -1,12 +1,12 @@
 package ru.mirea.istornikov.mireaproject.ui.browser
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
 import androidx.fragment.app.Fragment
+import ru.mirea.istornikov.mireaproject.R
 import ru.mirea.istornikov.mireaproject.databinding.FragmentBrowserBinding
 
 
@@ -19,11 +19,10 @@ class BrowserFragment : Fragment() {
 
         binding = FragmentBrowserBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        binding.buttonFind.setOnClickListener{
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("https://www.google.com/search?q=" + binding.editTextBrowser.getText().toString())
-            startActivity(intent)
-        }
+
+        val webView = binding.webView
+        webView.settings.javaScriptEnabled = true
+        webView.loadUrl("https://yandex.ru")
 
         return root
     }
