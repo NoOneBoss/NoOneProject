@@ -18,12 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MireaProject">
-
+        <activity
+            android:name=".ui.map.PanoramaActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MireaProject.NoActionBar"/>
-
+            android:theme="@style/Theme.MireaProject.NoActionBar" />
         <activity
             android:name=".ui.stories.StoryView"
             android:exported="false" />
@@ -40,6 +41,7 @@
             android:theme="@style/Theme.MireaProject.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

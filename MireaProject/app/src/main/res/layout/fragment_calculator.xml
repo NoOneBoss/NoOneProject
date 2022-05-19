@@ -230,6 +230,15 @@
 
             </TableRow>
         </TableLayout>
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            app:icon="@android:drawable/ic_input_delete"
+            app:iconPadding="10dp"
+            app:iconTintMode="src_in" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

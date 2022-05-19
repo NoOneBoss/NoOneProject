@@ -5,10 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import net.objecthunter.exp4j.ExpressionBuilder
-import ru.mirea.istornikov.mireaproject.R
 import ru.mirea.istornikov.mireaproject.databinding.FragmentCalculatorBinding
 
 class CalculatorFragment : Fragment() {
@@ -35,6 +33,7 @@ class CalculatorFragment : Fragment() {
         binding.number6.setOnClickListener(this::numberClick)
         binding.number7.setOnClickListener(this::numberClick)
         binding.number8.setOnClickListener(this::numberClick)
+        binding.number9.setOnClickListener(this::numberClick)
         binding.number0.setOnClickListener(this::numberClick)
     }
 
@@ -45,6 +44,7 @@ class CalculatorFragment : Fragment() {
         binding.operationDelit.setOnClickListener(this::operationClick)
         binding.operationPow.setOnClickListener(this::operationClick)
         binding.operationEquals.setOnClickListener(this::operationClick)
+        binding.clearButton.setOnClickListener(this::operationClick)
     }
 
     fun operationClick(view : View){
@@ -68,6 +68,12 @@ class CalculatorFragment : Fragment() {
             }
             "=" -> {
                 resultTextView.text = "=" + ExpressionBuilder(inputTextView.text.toString()).build().evaluate().toString()
+            }
+            "CLEAR" -> {
+                if(inputTextView.text.isNotEmpty()) {
+                    inputTextView.text = inputTextView.text.toString().dropLast(1)
+                    resultTextView.text = ""
+                }
             }
         }
     }
